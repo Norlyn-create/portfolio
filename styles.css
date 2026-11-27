@@ -32,3 +32,17 @@
 .babyworld-sales-image:hover img{transform:scale(1.04)}
 .babyworld-sales-gallery .visual-label{top:12px;left:15px;color:#4d4039}
 @media(max-width:760px){.babyworld-sales-gallery{height:270px;gap:5px;padding:35px 10px 10px}}
+
+/* Larger, uncropped portfolio samples */
+.work-babyworld,.work-babyworld-sales{grid-column:span 2}
+.babyworld-gallery{height:auto;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:auto;gap:10px;padding:42px 16px 16px}
+.babyworld-image,.babyworld-sales-image{height:auto;aspect-ratio:4/5;min-width:0;overflow:hidden;background:#f3eee6}
+.babyworld-image img,.babyworld-sales-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#f3eee6}
+.babyworld-image-main{grid-row:auto;grid-column:auto}
+.babyworld-sales-gallery{height:auto;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:auto;gap:10px;padding:42px 16px 16px}
+@media(max-width:760px){
+ .work-babyworld,.work-babyworld-sales{grid-column:auto}
+ .babyworld-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:40px 10px 10px}
+ .babyworld-sales-gallery{height:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:40px 10px 10px}
+ .babyworld-image,.babyworld-sales-image{aspect-ratio:4/5}
+}
