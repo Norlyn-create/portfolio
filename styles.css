@@ -69,3 +69,13 @@
 .balai-review-image:hover img{transform:scale(1.025)}
 .balai-reviews-gallery .visual-label{top:11px;left:12px;color:#4d4039}
 @media(max-width:760px){.balai-reviews-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:36px 8px 8px}.balai-review-image{height:112px}}
+
+
+/* Balai Makati social media content samples */
+.work-balai-content{grid-column:auto}
+.balai-content-gallery{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:38px 10px 10px;background:#dfd0c2;align-items:center}
+.balai-content-image{height:132px;min-width:0;overflow:hidden;background:#f3eee6;box-shadow:0 5px 14px rgba(35,25,20,.10);display:flex;align-items:center;justify-content:center}
+.balai-content-image img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .4s ease}
+.balai-content-image:hover img{transform:scale(1.025)}
+.balai-content-gallery .visual-label{top:11px;left:12px;color:#4d4039}
+@media(max-width:760px){.balai-content-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:36px 8px 8px}.balai-content-image{height:112px}}
