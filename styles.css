@@ -13,3 +13,13 @@
 /* About profile portrait */
 .about-profile img{display:block;width:min(100%,300px);aspect-ratio:4/5;object-fit:cover;object-position:center 28%;margin:0 0 28px;border:1px solid rgba(200,121,145,.55);padding:7px;background:rgba(243,238,230,.08);box-shadow:16px 16px 0 rgba(200,121,145,.12)}
 @media(max-width:760px){.about-profile img{width:min(72%,260px);margin-bottom:24px}}
+
+
+/* Babyworld PH everyday content gallery */
+.babyworld-gallery{height:280px;position:relative;overflow:hidden;background:#dfd0c2;display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:7px;padding:35px 14px 14px;}
+.babyworld-image{min-width:0;min-height:0;overflow:hidden;background:#f3eee6;}
+.babyworld-image img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .45s ease;}
+.babyworld-image:hover img{transform:scale(1.04)}
+.babyworld-image-main{grid-row:span 2;}
+.babyworld-gallery .visual-label{top:12px;left:15px;color:#4d4039;}
+@media(max-width:760px){.babyworld-gallery{height:270px;grid-template-columns:1.2fr 1fr 1fr;gap:5px;padding:35px 10px 10px;}}
