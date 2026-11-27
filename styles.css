@@ -61,10 +61,11 @@
 @media(max-width:760px){.video-showcase{padding:18px;margin-bottom:42px}.video-showcase-heading{display:block}.video-showcase-heading>p{margin-top:12px}.video-showcase-grid{grid-template-columns:1fr;gap:24px}.video-sample video{max-height:620px;width:min(100%,360px);margin:auto}}
 
 
-/* Balai Makati guest feedback gallery */
-.balai-reviews-gallery{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:44px 16px 16px;background:#dfd0c2;align-items:start}
-.balai-review-image{min-width:0;overflow:hidden;background:#f3eee6;box-shadow:0 8px 22px rgba(35,25,20,.12)}
-.balai-review-image img{display:block;width:100%;height:auto;object-fit:contain;transition:transform .4s ease}
+/* Balai Makati guest feedback gallery — compact project card */
+.work-balai-reviews{grid-column:auto}
+.balai-reviews-gallery{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:38px 10px 10px;background:#dfd0c2;align-items:center}
+.balai-review-image{height:132px;min-width:0;overflow:hidden;background:#f3eee6;box-shadow:0 5px 14px rgba(35,25,20,.10);display:flex;align-items:center;justify-content:center}
+.balai-review-image img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .4s ease}
 .balai-review-image:hover img{transform:scale(1.025)}
-.balai-reviews-gallery .visual-label{top:13px;left:16px;color:#4d4039}
-@media(max-width:760px){.balai-reviews-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:40px 10px 10px}}
+.balai-reviews-gallery .visual-label{top:11px;left:12px;color:#4d4039}
+@media(max-width:760px){.balai-reviews-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:36px 8px 8px}.balai-review-image{height:112px}}
